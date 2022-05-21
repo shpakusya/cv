@@ -1,5 +1,5 @@
 # Kate Shpakovskaya
-![img]()
+![Personal photo](/rsschool-cv/images/persph.jpg)
 
 ## Contact information:
 **Location:** Minsk,  Belarus  
@@ -11,9 +11,9 @@
 I am studying at BSUIR as a marketing-programmer.
 I like to solve non-standard tasks, I always learn something interesting and discover new opportunities for myself.
 I have good communication skills and know how to work in a team.  
-Always focus on achieving the most effective result in my work
+Always focus on achieving the most effective result in my work.
 ## Skills
-* C++
+* C, C++
 * Java (basic of JavaEE: RMI, CORBA, EJB, JSF)
 * HTML
 * CSS
