@@ -1,5 +1,5 @@
 # Kate Shpakovskaya
-![Personal photo](/rsschool-cv/images/persph.jpg)
+![Personal photo](/images/persph.jpg)
 
 ## Contact information:
 **Location:** Minsk,  Belarus  
