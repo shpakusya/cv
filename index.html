@@ -28,35 +28,89 @@
             </nav>
         </div>
     </header>
-    <main class="main">
-        <div class="container">
+    <main class="main container">
             <section class="section" id="profile">
                 <h1>Kate Shpakovskaya</h1>
+                <img src="./assets/persph.jpg" alt="personal photo">
             </section>
             <section class="section" id="contacts">
                 <h2>Contacts</h2>
+                <ul>
+                    <li>Location: <a href="https://www.google.com/maps/place/%D0%9C%D0%B8%D0%BD%D1%81%D0%BA/@53.8833414,27.0343396,9z/data=!3m1!4b1!4m5!3m4!1s0x46dbcfd35b1e6ad3:0xb61b853ddb570d9!8m2!3d53.9006011!4d27.558972?hl=ru">Minsk, Belarus</a></li>
+                    <li>E-mail: <a href="mailto: kate.shpakovskaya02@gmail.com">kate.shpakovskaya02@gmail.com</a></li>
+                    <li>Telegram: <a href="https://t.me/shpakusua">@shpakusya</a></li>
+                    <li>Discord RSSchool: Shpakusya(@shpakusya)</li>
+                </ul>
             </section>        
             <section class="section" id="about">
                 <h2>About</h2>
+                <p>I am studying at BSUIR as a marketing-programmer. Like to solve non-standard tasks, I always learn something interesting and discover new opportunities for myself.
+                <br>I have good communication skills and know how to work in a team. Always focus on achieving the most effective result in my work.
+                </p>
             </section>        
             <section class="section" id="skills">
                 <h2>Skills</h2>
+                <ul>
+                    <li>C, C++</li>
+                    <li>Java, basic of JavaEE: RMI, CORBA, EJB, JSF</li>
+                    <li>HTML, CSS</li>
+                    <li>JS (basics)</li>
+                    <li>Git, GitHub</li>
+                    <li>VS, VS Code, Intellij IDEA, Eclipse</li>
+                    <li>MySQL</li>
+                    <li>Photoshop, Illustrator</li>
+                </ul>
             </section>        
             <section class="section" id="code">
                 <h2>Code</h2>
+                <code>
+                    <pre>
+@WebServlet("/phone")
+    public class PhoneServlet extends HttpServlet {
+        @EJB
+        PhoneServiceImpl phoneService;
+        @Override
+        protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+            throws IOException {
+        resp.setContentType("text/html");
+        PrintWriter out = resp.getWriter();
+        try {
+            Vector<String> phones = phoneService.getPhones();
+            for (int i = 0; i < 10; i++) {
+                String[] arr = phones.get(i).split("");
+                phones.set(i, arr[0] + "-" + arr[1] + arr[2] + "-" + arr[3] + arr[4] + "-" + arr[5] + arr[6]);
+            }
+            Collections.sort(phones);
+                out.write(phones.toString());
+            } catch (NumberFormatException e) {
+                out.write("Error!");
+            }
+        }
+    }</pre>
+                </code>
             </section>        
             <section class="section" id="projects">
                 <h2>Projects</h2>
+                <a href="https://shpakusya.github.io/rsschool-cv/">CV</a>
             </section>        
             <section class="section" id="edu">
                 <h2>Education</h2>
+                <ul>
+                    <li>BSUIR</li>
+                    <li>HTML, CSS, JS on <a href="https://ru.code-basics.com/">CodeBasics</a></li>
+                    <li>JS manual at <a href="https://learn.javascript.ru/">learn.javascript.ru</a></li>
+                </ul>
             </section>        
             <section class="section" id="lang">
                 <h2>Languages</h2>
+                <ul>
+                    <li>English: C1 in online test EF Set, <a href="https://www.efset.org/cert/oAr9fD">certificate</a></li>
+                    <li>Russian: native</li>
+                    <li>Belarussian: native</li>
+                </ul>
             </section>
-        </div>     
     </main>
-    <footer class="footer">
+    <footer class="footer container">
 
     </footer>  
 </body>
