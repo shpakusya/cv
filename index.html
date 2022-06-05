@@ -4,14 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/fav.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -41,9 +36,9 @@
             </section>
             <section class="section" id="contacts">
                 <h2 class="h2-titles">Contacts</h2>
-                <ul>
+                <ul class="list">
                     <li>Location: <a href="https://www.google.com/maps/place/%D0%9C%D0%B8%D0%BD%D1%81%D0%BA/@53.8833414,27.0343396,9z/data=!3m1!4b1!4m5!3m4!1s0x46dbcfd35b1e6ad3:0xb61b853ddb570d9!8m2!3d53.9006011!4d27.558972?hl=ru" class="main-link">Minsk, Belarus</a></li>
-                    <li>E-mail: <a href="mailto: kate.shpakovskaya02@gmail.com" class="main-link">kate.shpakovskaya02@gmail.com</a></li>
+                    <li>E-mail: <a href="mailto:kate.shpakovskaya02@gmail.com" class="main-link">kate.shpakovskaya02@gmail.com</a></li>
                     <li>Telegram: <a href="https://t.me/shpakusua" class="main-link">@shpakusya</a></li>
                     <li>Discord RSSchool: Shpakusya(@shpakusya)</li>
                 </ul>
@@ -56,7 +51,7 @@
             </section>        
             <section class="section" id="skills">
                 <h2 class="h2-titles">Skills</h2>
-                <ul>
+                <ul class="list">
                     <li>C, C++</li>
                     <li>Java, basic of JavaEE: RMI, CORBA, EJB, JSF</li>
                     <li>HTML, CSS</li>
@@ -68,34 +63,14 @@
                 </ul>
             </section>        
             <section class="section" id="code">
-                <h2 class="h2-titles">Code</h2>
-                <code>
-                    <pre class="code">
-@WebServlet("/phone")
-    public class PhoneServlet extends HttpServlet {
-        @EJB
-        PhoneServiceImpl phoneService;
-        @Override
-        protected void doGet(HttpServletRequest req, 
-        HttpServletResponse resp) throws IOException {
-        resp.setContentType("text/html");
-        PrintWriter out = resp.getWriter();
-        try {
-            Vector<String> phones = phoneService.getPhones();
-            for (int i = 0; i < 10; i++) {
-                String[] arr = phones.get(i).split("");
-                phones.set(i, arr[0] + "-" + 
-                arr[1,2] + "-" + 
-                arr[3,4] + "-" + arr[5,6];
-            }
-            Collections.sort(phones);
-                out.write(phones.toString());
-            } catch (NumberFormatException e) {
-                out.write("Error!");
-            }
-        }
-    }</pre>
-                </code>
+                <h2 class="h2-titles">Code</h2> 
+                <pre>
+                    <code class="code">
+function multiply(a, b){ 
+return a * b;
+}
+                    </code>
+                </pre>
             </section>        
             <section class="section" id="projects">
                 <h2 class="h2-titles">Projects</h2>
@@ -103,7 +78,7 @@
             </section>   
             <section class="section" id="courses">
                 <h2 class="h2-titles">Courses</h2>
-                <ul>
+                <ul class="list">
                     <li>HTML, CSS, JS on <a href="https://ru.code-basics.com/" class="main-link">CodeBasics</a></li>
                     <li>JS manual at <a href="https://learn.javascript.ru/" class="main-link">learn.javascript.ru</a></li>
                 </ul>
@@ -114,7 +89,7 @@
             </section>        
             <section class="section" id="lang">
                 <h2 class="h2-titles">Languages</h2>
-                <ul>
+                <ul class="list">
                     <li>English: C1 in online test EF Set, <a href="https://www.efset.org/cert/oAr9fD" class="main-link">certificate</a></li>
                     <li>Russian: native</li>
                     <li>Belarussian: native</li>
