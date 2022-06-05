@@ -46,6 +46,15 @@
     margin-bottom: auto;
   }
 
+  .main-link{
+    text-decoration: none;
+    color: rgb(135, 135, 135);
+  }
+
+  .main-link:hover{
+    color: rgb(232, 67, 122)
+  }
+
   #profile{
     width: 100%;
     display: flex;
