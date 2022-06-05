@@ -26,12 +26,13 @@
       list-style: none;
       display: flex;
       justify-content: flex-end;
+      flex-wrap: wrap;
       align-items: center;
   }
 
   .link {
     color: white;
-    padding: 30px;
+    padding: 20px;
     line-height: 50px;
     text-decoration: none; 
   }
@@ -40,7 +41,6 @@
       color: grey;
   }
   .main{
-    border: 1px solid red;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: auto;
@@ -48,13 +48,12 @@
 
   .section{
     width: 50%;
-    padding: 10px;
-    border: 1px solid red;
+    padding: 20px;
   }
 
   .footer{
     background-color: black;
-    padding: 30px;
+    padding: 20px;
   }
 
   .footer-container{

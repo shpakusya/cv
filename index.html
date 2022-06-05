@@ -22,6 +22,7 @@
                     <li><a href="#skills" class="link">Skills</a></li>
                     <li><a href="#code" class="link">Code</a></li>
                     <li><a href="#projects" class="link">Projects</a></li>
+                    <li><a href="#courses" class="link">Courses</a></li>
                     <li><a href="#edu" class="link">Education</a></li>
                     <li><a href="#lang" class="link">Languages</a></li>
                 </ul>
@@ -70,15 +71,17 @@
         @EJB
         PhoneServiceImpl phoneService;
         @Override
-        protected void doGet(HttpServletRequest req, HttpServletResponse resp)
-            throws IOException {
+        protected void doGet(HttpServletRequest req, 
+        HttpServletResponse resp) throws IOException {
         resp.setContentType("text/html");
         PrintWriter out = resp.getWriter();
         try {
             Vector<String> phones = phoneService.getPhones();
             for (int i = 0; i < 10; i++) {
                 String[] arr = phones.get(i).split("");
-                phones.set(i, arr[0] + "-" + arr[1] + arr[2] + "-" + arr[3] + arr[4] + "-" + arr[5] + arr[6]);
+                phones.set(i, arr[0] + "-" + 
+                arr[1,2] + "-" + 
+                arr[3,4] + "-" + arr[5,6];
             }
             Collections.sort(phones);
                 out.write(phones.toString());
@@ -92,14 +95,17 @@
             <section class="section" id="projects">
                 <h2>Projects</h2>
                 <a href="https://shpakusya.github.io/rsschool-cv/">CV</a>
-            </section>        
-            <section class="section" id="edu">
-                <h2>Education</h2>
+            </section>   
+            <section class="section" id="courses">
+                <h2>Courses</h2>
                 <ul>
-                    <li>BSUIR</li>
                     <li>HTML, CSS, JS on <a href="https://ru.code-basics.com/">CodeBasics</a></li>
                     <li>JS manual at <a href="https://learn.javascript.ru/">learn.javascript.ru</a></li>
                 </ul>
+            </section>     
+            <section class="section" id="edu">
+                <h2>Education</h2>
+                    <p>BSUIR</p>
             </section>        
             <section class="section" id="lang">
                 <h2>Languages</h2>
