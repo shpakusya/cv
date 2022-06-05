@@ -46,6 +46,20 @@
     margin-bottom: auto;
   }
 
+  #profile{
+    width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  }
+
+  .photo{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 80%);
+  }
+
   .section{
     width: 50%;
     padding: 20px;
