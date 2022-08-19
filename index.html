@@ -40,7 +40,6 @@
                     <li>Location: <a href="https://www.google.com/maps/place/%D0%9C%D0%B8%D0%BD%D1%81%D0%BA/@53.8833414,27.0343396,9z/data=!3m1!4b1!4m5!3m4!1s0x46dbcfd35b1e6ad3:0xb61b853ddb570d9!8m2!3d53.9006011!4d27.558972?hl=ru" class="main-link">Minsk, Belarus</a></li>
                     <li>E-mail: <a href="mailto:kate.shpakovskaya02@gmail.com" class="main-link">kate.shpakovskaya02@gmail.com</a></li>
                     <li>Telegram: <a href="https://t.me/shpakusua" class="main-link">@shpakusya</a></li>
-                    <li>Discord RSSchool: Shpakusya(@shpakusya)</li>
                 </ul>
             </section>        
             <section class="section" id="about">
@@ -52,12 +51,10 @@
             <section class="section" id="skills">
                 <h2 class="h2-titles">Skills</h2>
                 <ul class="list">
-                    <li>C, C++</li>
-                    <li>Java, basic of JavaEE: RMI, CORBA, EJB, JSF</li>
+                    <li>Java</li>
                     <li>HTML, CSS</li>
-                    <li>JS (basics)</li>
+                    <li>JS</li>
                     <li>Git, GitHub</li>
-                    <li>VS, VS Code, Intellij IDEA, Eclipse</li>
                     <li>MySQL</li>
                     <li>Photoshop, Illustrator</li>
                 </ul>
@@ -66,21 +63,34 @@
                 <h2 class="h2-titles">Code</h2> 
                 <pre>
                     <code class="code">
-function multiply(a, b){ 
-return a * b;
+function showTime(){
+    const date = new Date();
+    const currentTime = date.toLocaleTimeString(`${settings.lan}-${settings.lan.toUpperCase()}`)
+    time.textContent = currentTime
+    showDate()
+    showGreeting()
+    setTimeout(showTime, 1000)
 }
                     </code>
                 </pre>
             </section>        
             <section class="section" id="projects">
                 <h2 class="h2-titles">Projects</h2>
-                <a href="https://shpakusya.github.io/rsschool-cv/" class="main-link">CV</a>
+                <ul>
+                    <p>Sites</p>
+                    <li><a href="https://rolling-scopes-school.github.io/shpakusya-JSFEPRESCHOOL2022Q2/travel/" class="main-link">Travel</a></li>
+                    <li><a href="https://rolling-scopes-school.github.io/shpakusya-JSFEPRESCHOOL2022Q2/momentum/#en" class="main-link">Momentum</a></li>
+                    <p>Js practice</p>
+                    <li><a href="https://github.com/shpakusya/morse-decoder" class="main-link">Morse decoder</a></li>
+                    <li><a href="https://github.com/shpakusya/brackets" class="main-link">Pairs of brackets</a></li>
+                </ul>
             </section>   
             <section class="section" id="courses">
                 <h2 class="h2-titles">Courses</h2>
                 <ul class="list">
                     <li>HTML, CSS, JS on <a href="https://ru.code-basics.com/" class="main-link">CodeBasics</a></li>
                     <li>JS manual at <a href="https://learn.javascript.ru/" class="main-link">learn.javascript.ru</a></li>
+                    <li>Ftont-end course from <a href="https://rs.school/" class="main-link">RS school</a></li>
                 </ul>
             </section>     
             <section class="section" id="edu">
@@ -98,8 +108,7 @@ return a * b;
     </main>
     <footer class="footer">
         <div class="container footer-container">
-            <div class="footer-info"> 2022  <a href="https://github.com/shpakusya" class="link"> shpakusya</a></div>
-            <a href="https://rs.school/js/" class="rss"><img src="assets/rss.svg" alt="rss logo"></a>
+            <div class="footer-info"> 2022</div>
         </div>
     </footer>  
 </body>
