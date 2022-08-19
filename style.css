@@ -67,6 +67,10 @@
     padding-bottom: 40px;
   }
 
+  #about{
+    width: 100%;
+  }
+
   .main-title{
     font-size: 40px;
     font-weight: 700;
