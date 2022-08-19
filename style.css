@@ -35,7 +35,8 @@
     color: white;
     padding: 20px;
     line-height: 50px;
-    text-decoration: none; 
+    text-decoration: none;
+    transition: 0.2s;
   }
 
   .link:hover{
@@ -50,6 +51,7 @@
   .main-link{
     text-decoration: none;
     color: rgb(135, 135, 135);
+    transition: 0.2s;
   }
 
   .main-link:hover{
